@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Scratch Project ✨</title>
+    <!-- 👇 css code file 👇 -->
+    <link rel="stylesheet" href="./src/style/global.css" />
+  </head>
+  <body>
+    <!-- Integrated Blank From Scratch Project -->
+    <main class="container">
+      <form class="display" id="display">
+        <input type="text" id="screen" placeholder="0" />
+      </form>
+      <section class="button">
+        <div class="left-button">
+          <button class="tombol symbol" onclick="display('clear')">AC</button>
+          <button class="tombol symbol" onclick="display('delete')">del</button>
+          <button class="tombol symbol" onclick="display('%')">%</button>
+          <script lang="javascript">
+            for (let i = 9; i >= 1; i--) {
+                document.write(
+                    `<button class="tombol" onclick="display(${i})">` + i + `</button>`
+                )
+              }
+          </script>
+          <button class="tombol" onclick="display(num)"></button>
+          <button class="tombol" onclick="display('0')">0</button>
+          <button class="tombol" onclick="display(num)"></button>
+        </div>
+        <div class="right-button">
+          <button class="tombol symbol" onclick="display('/')">/</button>
+          <button class="tombol symbol" onclick="display('*')">X</button>
+          <button class="tombol symbol" onclick="display('-')">-</button>
+          <button class="tombol symbol" onclick="display('+')">+</button>
+          <button class="tombol symbol" onclick="display('action')">=</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- 👇 javascript code file 👇 -->
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
